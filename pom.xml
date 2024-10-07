@@ -105,6 +105,13 @@
 		</dependency>
 
 		<!-- GCP Dependencies -->
+		<dependency>
+		    <groupId>com.google.cloud.sql</groupId>
+		    <artifactId>postgres-socket-factory</artifactId>
+		    <version>1.20.1</version>
+		</dependency>
+
+
 		<!-- <dependency>
 			<groupId>com.google.cloud</groupId>
 			<artifactId>spring-cloud-gcp-dependencies</artifactId>
@@ -132,26 +139,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>3.1.5</version>
-				<executions>
-					<execution>
-						<id>pre-integration-test</id>
-						<goals>
-							<goal>start</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>post-integration-test</id>
-						<goals>
-							<goal>stop</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.springdoc</groupId>
